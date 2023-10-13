@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jequery Event</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <p id="pTag">Hello C07 - Wellcome to jQuery CDN</p>
+    <button class="hide-btn">Hide</button>
+    <button class="show-btn">Show</button>
+
+    <script>
+      $(document).ready(function () {
+        $(".hide-btn").click(function () {
+          $("#pTag").hide();
+        });
+        $(".show-btn").click(function () {
+          $("#pTag").show();
+        });
+      });
+    </script>
+  </body>
+</html>

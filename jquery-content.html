@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jequery Content</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2>Jquery Content</h2>
+    <p id="pTag">Hello C07 - Wellcome to jQuery CDN</p>
+
+    <script>
+      $(document).ready(function () {
+        var h2Text = $("h2").text();
+        console.log(h2Text);
+
+        var h2Html = $("pTag").html();
+        console.log(h2Html);
+
+        
+      });
+    </script>
+  </body>
+</html>

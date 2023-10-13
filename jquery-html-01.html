@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery HTML</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img
+      src="./img/1654263528_2n1d---main-kv--1-.webp"
+      width="200"
+      alt="Jquery Library"
+    />
+    <br>
+    <button id="imageSizeBtn">Change image Size</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#imageSizeBtn").click(function () {
+          $("img").attr("width", "400");
+        });
+      });
+    </script>
+  </body>
+</html>

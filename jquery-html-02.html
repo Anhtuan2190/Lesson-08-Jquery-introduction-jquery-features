@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery HTML 02</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <p class="pTag1">Wellcome Jequery</p>
+    <p class="pTag2">Hell C07</p>
+    <button id="prependText">Prepend Text</button>
+    <button id="appendText">Append Text</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#prependText").click(function () {
+          $(".pTag1").prepend("<strong> Hello C07 </strong>");
+        });
+        $("#appendText").click(function () {
+          $(".pTag2").append("<strong> WellCome Jquery </strong>");
+        });
+      });
+    </script>
+  </body>
+</html>

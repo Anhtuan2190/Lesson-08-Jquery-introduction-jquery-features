@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery HTML 02</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <p>Hello C07, Wellcome To Jequery</p>
+    <p>Hello C07, Wellcome To Jequery</p>
+    <p>Hello C07, Wellcome To Jequery</p>
+    <button id="changeColor">Change Color</button>
+    <button id="removeColor">Remove Color</button>
+    <button id="changeColors">Change Colors</button>
+    <button id="resetColor">Reset Color</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#changeColor").click(function () {
+          $("p").css("background-color", "yellow");
+        });
+        $("#removeColor").click(function () {
+          $("p").css("background-color", "white");
+        });
+        $("#changeColors").click(function () {
+          $("p").css({ "background-color": "blue", color: "white", "font-size": "50px" });
+        });
+        $("#resetColor").click(function () {
+          $("p").css({ "background-color": "white", color: "black" });
+        });
+      });
+    </script>
+  </body>
+</html>
