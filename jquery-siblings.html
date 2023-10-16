@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Siblings</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      div (parent)
+      <p class="pTag1">p tag 1</p>
+      <span>span 1</span>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <p class="pTag2">p tag 2</p>
+      <span>span 2</span>
+      <span>span 3</span>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        // $(".pTag1").next().css({ color: "red", border: "2px solid red" });
+        // $(".pTag1").nextAll().css({ color: "red", border: "2px solid red" });
+        // $(".pTag1")
+        //   .nextUntil("pTag2")
+        //   .css({ color: "red", border: "2px solid red" });
+
+        $(".pTag2").prev().css({ color: "red", border: "2px solid red" });
+        // $(".pTag2").prevAll().css({ color: "red", border: "2px solid red" });
+        // $(".pTag2")
+        //   .prevUntil("span")
+        //   .css({ color: "red", border: "2px solid red" });
+      });
+    </script>
+  </body>
+</html>

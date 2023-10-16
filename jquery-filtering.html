@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Siblings</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   <h1>Hello C07</h1>
+   <p>learn HTML</p>
+   <p>learn CSS</p>
+   <p class="learn-js">learn JavaScript</p>
+   <p>learn ES6</p>
+   <p>learn ReatsJS</p>
+
+    <script>
+      $(document).ready(function () {
+       $("p").first().css({color: "blue", border: "2px solid blue"})
+       $("p").last().css({color: "red", border: "2px solid red"})
+       $("p").eq(2).css({color: "purple", border: "2px solid purple"})
+
+       $("p.learn-js").next().css({color: "orange", border: "2px solid orange"})
+      });
+    </script>
+  </body>
+</html>
